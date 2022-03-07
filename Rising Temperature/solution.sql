@@ -1,4 +1,4 @@
-https://leetcode.com/problems/rising-temperature
+#https://leetcode.com/problems/rising-temperature
 select t.id
 from (select id, recordDate, temperature,
       lag(temperature, 1) over(order by recordDate) as prev_temp, 
